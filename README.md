@@ -106,20 +106,224 @@ Unity key code reference is available [here](https://docs.unity3d.com/ScriptRefe
 8. Open the game. If you've done everything correctly, you should be able to access the console with the hotkey of your choice.  
   
 ### Console commands  
-`help` - Displays a list of available commands.  
-`invincible` - Enables/disables god mode: the Penitent One's health isn't affected by enemy attacks or contact damage, and dying on the spikes respawns him in the last stable spot. Fervour still decreases normally, and flasks aren't refilled automatically. Note that this command might be buggy when the Penitent One falls into the depths (teleporting via the console might help in such a case).  
-`restart` - Reloads current level. This might lead to an amusing bug in which you can end up with multiple Penitent Ones (it persists only on the current level).
-`kill all` - Kills all entities in the current level. This includes the enemies **and** the player; also frees caged cherubs. NPCs - not tested yet.  
-`kill player`
-`kill player prieudieu`
-`kill NAME`
-`skin`
-`skin list`
-`skin get`
-`skin unlock SKIN_ID`
+```
+execution
+execution y
+execution n
+```
+Something to do with executions, needs testing.
+```
+flag
+flag set IDFLAG
+flag clear IDFLAG
+flag test IDFLAG
+```
+Possibly related to quest states?
+```
+graybox
+```
+???
+```
+help
+```
+Displays a list of available commands.
+```
+invincible
+```
+Enables/disables invulnerability mode: the Penitent One's health isn't affected by enemy attacks or contact damage, and dying on the spikes respawns him in the last stable spot. Fervour still decreases normally, and flasks aren't refilled automatically. Note that this command might be buggy when the Penitent One falls into the depths (teleporting via the console might help in such a case).
+```
+invtest
+```
+Adds all items (rosary beads, prayers, Mea Culpa hearts, etc.) **Don't use this if you haven't gotten the relevant achievements yet, as it's not possible to remove Steam achievements!**  
+--todo - check Steam Achievement Manager and other possible solutions?
+```
+kill all
+```
+Kills all entities in the current level. This includes the enemies **and** the player; also frees caged cherubs. NPCs - not tested yet.  
+```
+kill player
+```
+```
+kill player prieudieu
+```
+```
+kill NAME
+```
+```
+language
+language list
+language current
+language set LANGUAGE_CODE
+```
+These commands are related to language of the UI.
+```
+load
+```
+This command is helpful in quickly traversing a level. It seems to work if you use it in one level and then use the door to go to another one. Then a list of entrances to that level appears, along with an indication in which direction the door points to (N, S, W, E). Be careful, you might end up impaled on the spikes in some places.
+```
+map
+```
+```
+map revealall
+```
+Should reveal all locations on the map. Note: might be buggy.
+```
+restart
+```
+Reloads current level. This might lead to an amusing bug in which you can end up with multiple Penitent Ones (it persists only on the current level).
+```
+sendevent
+```
+???
+```
+show_debug_ui
+show_debug_ui off
+show_debug_ui on
+show_debug_ui current
+```
+Seems to do nothing visible.
+```
+showui
+showui off
+showui on
+showui current
+```
+These commands toggle the UI - useful for screenshots. An interesting usage for this command is also trying to do a playthrough with UI turned off for added challenge.
+--test the dialogs!
+```
+skin
+skin list
+skin get
+skin unlock SKIN_ID
+```
+These commands are related to player skins/palettes.
+```
+testplan
+```
+???
 
+  
+#### Statistic/attribute commands
+```
+bonus
+bonus help
+bonus list
+```
+The last of these commands shows current bonuses (for example, to strenght or sword power).
+```
+fervour
+fervour current
+fervour set VALUE
+fervour upgrade
+fervour fill
+fervour setmax VALUE
+```
+```
+flask
+flask current
+flask set VALUE
+flask upgrade
+flask fill
+flask setmax VALUE
+```
+```
+health
+health current
+health set VALUE
+health upgrade
+health fill
+health setmax VALUE
+```
+```
+meaculpa
+meaculpa current
+meaculpa set VALUE
+meaculpa upgrade
+```
+These commands are related to the power of the sword.
+```
+maxfervour
+```
+Fills the fervour bar; it won't go beyond the limit set by guilt.
+```
+purge
+purge current
+purge set VALUE
+purge upgrade
+purge fill
+purge setmax VALUE
+```
+These commands are related to Tears of Atonement.
+```
+skill
+skill list
+skill lock SKILLNAME
+skill unlock SKILLNAME
+skill showui
+```
+These commands are related to extra attacks unlocked in the Mea Culpa shrines.
+```
+strength
+strength current
+strength set VALUE
+strength upgrade
+```
+These commands are related to the strength of the Penitent One (no, really, imagine that).
+  
+#### Item commands
+Note the typo in `equiped`.  
+```
+bead
+bead list
+bead listowned
+bead setslots SLOTS
+bead add IDBEAD
+bead remove IDBEAD
+bead equip IDBEAD SLOT
+bead unequip SLOT
+```
+These commands are related to rosary beads.
+```
+collectible
+collectible list
+collectible listowned
+collectible add IDCOLLECTIBLEITEM
+collectible remove IDCOLLECTIBLEITEM
+```
+These commands are related to the collectible bones.
+```
+prayer
+prayer list
+prayer listowned
+prayer add IDPRAYER
+prayer remove IDPRAYER
+prayer equiped
+prayer equip IDPRAYER SLOT
+prayer unequip SLOT
+prayer decipher IDPRAYER NUMBER
+```
+These commands are related to prayers.
+```
+questitem
+questitem list
+questitem listowned
+questitem add IDQUESTITEM
+questitem remove IDQUESTITEM
+```
+These commands are related to various quest items.
+```
+relic
+relic list
+relic listowned
+relic add IDRELIC
+relic remove IDRELIC
+relic equiped
+relic equip IDRELIC SLOT
+relic unequip SLOT
+```
+These commands are related to relics.
 
-other stuff: 
+## other stuff: 
 https://www.jetbrains.com/decompiler/  
  
 https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html  
