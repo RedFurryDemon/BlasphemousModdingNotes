@@ -10,9 +10,10 @@ Notably, no prior image editing/coding experience is necessary to follow these n
 ### Basic terms  
 Modding and code/asset editing use specific terminology; here I provide a short overview of some basic terms I'll be using in these notes.  
   
-*Alpha* - image transparency
-*Asset* - image, video, sound, or other file used for something in the game (for example, an NPC, level design, etc.); in broader terms, any file used by the game
-*Vanilla* - unmodded, original game or assets
+**Alpha** - image transparency  
+**Asset** - image, video, sound, or other file used for something in the game (for example, an NPC, level design, etc.); in broader sense, any file used by the game  
+**Level** - in Blasphemous, a level is one "room"; so every area consist of at least one level (usually more)
+**Vanilla** - unmodded, original game or assets  
   
 ### File and folder structure
 For the purposes of these notes, I will be using the following folder structure and names:
@@ -74,7 +75,7 @@ Palette editing in GIMP:
   
 ## Code editing  
 ### In-game console  
-The debug console is included in the vanilla game, but it is normally not accessible to the users. There is a mod that *should* enable the console: [Blasphemous Debug Console](https://www.nexusmods.com/blasphemous/mods/2) - however, it does not work for some users (including myself), and seems to be based on an earlier version of the game than the one currently available on Steam. Enabling the console on your own takes around a minute, probably much less than it would take to get the mod to work with the updated game version.  
+The debug console is included in the vanilla game, but it is normally not accessible to the users. It is extremely useful for testing mods and previewing how vanilla game behaves without having to play through the whole content normally. There is a mod that *should* enable the console: [Blasphemous Debug Console](https://www.nexusmods.com/blasphemous/mods/2) - however, it does not work for some users (including myself), and seems to be based on an earlier version of the game than the one currently available on Steam. Enabling the console on your own takes around a minute, probably much less than it would take to get the mod to work with the updated game version.  
   
 I used [dnSpy](https://github.com/0xd4d/dnSpy/releases) to enable the console.  
 1. Open dnSpy.  
@@ -100,9 +101,22 @@ In the same line, the console hotkey can be changed. For example, being an MW mo
 			if (Input.GetKeyDown(KeyCode.BackQuote))
 ```
 Unity key code reference is available [here](https://docs.unity3d.com/ScriptReference/KeyCode.html).  
+--add note that the comments aren't preserved, and best to save the decompiled source file!!!
 7. Click `Compile`, go to `File -> Save Module`, and click `OK` in the saving options.  
 8. Open the game. If you've done everything correctly, you should be able to access the console with the hotkey of your choice.  
   
+### Console commands  
+`help` - Displays a list of available commands.  
+`invincible` - Enables/disables god mode: the Penitent One's health isn't affected by enemy attacks or contact damage, and dying on the spikes respawns him in the last stable spot. Fervour still decreases normally, and flasks aren't refilled automatically. Note that this command might be buggy when the Penitent One falls into the depths (teleporting via the console might help in such a case).  
+`restart` - Reloads current level. This might lead to an amusing bug in which you can end up with multiple Penitent Ones (it persists only on the current level).
+`kill all` - Kills all entities in the current level. This includes the enemies **and** the player; also frees caged cherubs. NPCs - not tested yet.  
+`kill player`
+`kill player prieudieu`
+`kill NAME`
+`skin`
+`skin list`
+`skin get`
+`skin unlock SKIN_ID`
 
 
 other stuff: 
