@@ -3,21 +3,32 @@
 ### Introduction
 These notes are subjective, they quite possibly *don't* cover all possible tools and options, and I take no responsibility for you accidentally fucking up your install and/or saves. I started writing them first and foremost for my own reference, given that the modding documentation for Blasphemous was practically nonexistent. Needless to say, they're still extremely incomplete.  
   
+A large part of this file is written in the form of a tutorial, mainly because that makes it much easier for me to write.  
+  
 Notably, no prior image editing/coding experience is necessary to follow these notes (although it's certainly useful).  
   
-### Folder structure
+### Basic terms  
+Modding and code/asset editing use specific terminology; here I provide a short overview of some basic terms I'll be using in these notes.  
+  
+*Alpha* - image transparency
+*Asset* - image, video, sound, or other file used for something in the game (for example, an NPC, level design, etc.); in broader terms, any file used by the game
+*Vanilla* - unmodded, original game or assets
+  
+### File and folder structure
 For the purposes of these notes, I will be using the following folder structure and names:
 ```
 Steam\steamapps\common\Blasphemous (= ROOT folder)
---Blasphemous_Data (= DATA folder; vanilla folder which holds game data, obviously)
-----Managed (vanilla .dll files)
-------Mods (added when copying edited .dll files from Output)
---Blasphemous_Data_BACKUP (unedited copy of vanilla game data, in case of a fuckup)
---Goodies (vanilla folder with additional stuff like the official artbook or comic)
---Modding_Code (modding API, and any mod source code)
---Modding_Graphics_Export (unpacked data.unity3d, and unedited .png images exported from it)
---Modding_Graphics_Import (edited .png images, and .psd or .xcf source files)
---Modding_Tools (includes Save Editor and various other things)
+--\Blasphemous_Data (= DATA folder; vanilla folder which holds game data, obviously)
+--\--\data.unity3d (vanilla file containing )
+--\--\Managed (vanilla folder with .dll files)
+--\--\--\Assembly-CSharp.dll (vanilla file containing game logic and generally extremely important stuff)
+--\--\--\Mods (added when copying edited .dll files from Output)
+--\Blasphemous_Data_BACKUP (unedited copy of vanilla game data, in case of a fuckup)
+--\Goodies (vanilla folder with additional stuff like the official artbook or comic)
+--\Modding_Code (modding API, and any mod source code)
+--\Modding_Graphics_Export (unpacked data.unity3d, and unedited .png images exported from it)
+--\Modding_Graphics_Import (edited .png images, and .psd or .xcf source files)
+--\Modding_Tools (includes Save Editor and various other things)
 ```
 The two `Modding_Graphics_` folders are irrelevant unless you want to mod the sprites (that is, graphic assets).  
   
@@ -47,13 +58,13 @@ pontiff_defeated_screen_title-sharedassets1.assets-54.png
 ```
 2. Open them all in GIMP.  
 3. Select the black parts (best tool for that is `Select by color`); note that there are a few different shades used, so if the selection treshold is 0, you'll need to click each of them (in `Mode`, you can use the second option, `Add`, which adds the newly selected area to existing selection instead of replacing it). Remember to **uncheck** `Antialiasing` and `Feather edges`. Delete using `del` or `Ctrl + X`.  
-4. While editing `REQUIEM AETERNAM`, I also noticed that the different shades of orange look bad without the background, so I decided to use only one shade. However, it turns out only the `AE` is problematic (I checked by selecting by color the main part of the text, and the alpha background - 2 clicks with treshold 0, and then inverted the selection to see which parts had anything other than these two colors). I ended up simply editing that letter by hand, using 1-pixel brush.  
+4. Side note: While editing `REQUIEM AETERNAM`, I also noticed that the different shades of orange look bad without the background, so I decided to use only one shade. However, it turns out only the `AE` is problematic (I checked by selecting by color the main part of the text, and the alpha background - 2 clicks with treshold 0, and then inverted the selection to see which parts had anything other than these two colors). I ended up simply editing that letter by hand, using 1-pixel brush.  
   
 Before and after (selection to show edited parts):  
 ![image editing](images/Modding_graphic_shades_01.png)  
-5. Then I decided to slightly alter the color of `SUMMA BLASPHEMIA` text to add some more blue. This can be done for example by editing the color palette. Go to `Windows -> Dockable dialogs -> Colormap`. Double-click the color you want to edit. I changed it from `#ca439f` to `#8943ca`.  
+5. One more side note: Then I decided to slightly alter the color of `SUMMA BLASPHEMIA` text to add some more blue. This can be done for example by editing the color palette. Go to `Windows -> Dockable dialogs -> Colormap`. Double-click the color you want to edit. I changed it from `#ca439f` to `#8943ca`.  
   
-Palette editing in GIMP:
+Palette editing in GIMP:  
 ![palette editing in GIMP](images/Modding_graphic_colormap_01.png)  
 6. Save the .png files in `Modding_Graphics_Import` and put them in the game assets using UABE.  
   
