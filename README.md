@@ -1,70 +1,33 @@
 # Blasphemous Modding Notes
+by RedFurryDemon
   
-### Introduction
+---
+
+**You may use the information from these notes to:**  
+-- make mods  
+-- add information and resources to the wiki  
+-- fix bugs encountered during a playthrough  
+-- have fun  
+  
+**You may NOT use the information from these notes to:**  
+-- circumvient copyright in any way  
+-- cause any harm, including financial, to the devs and publishers  
+-- generally be an ass  
+  
+---
+  
+## Introduction
 These notes are subjective, they quite possibly *don't* cover all possible tools and options, and I take no responsibility for you accidentally fucking up your install and/or saves. I started writing them first and foremost for my own reference, given that the modding documentation for Blasphemous was practically nonexistent. Needless to say, they're still extremely incomplete.  
   
 A large part of this file is written in the form of a tutorial, mainly because that makes it much easier for me to write.  
   
 Notably, no prior image editing/coding experience is necessary to follow these notes (although it's certainly useful).  
   
-### Basic terms  
-Modding and code/asset editing use specific terminology; here I provide a short overview of some basic terms I'll be using in these notes.  
-  
-**Alpha** - image transparency  
-**Asset** - image, video, sound, or other file used for something in the game (for example, an NPC, level design, etc.); in broader sense, any file used by the game  
-**Level** - in Blasphemous, a level is one "room"; so every area consist of at least one level (usually more)
-**Vanilla** - unmodded, original game or assets  
-  
-### File and folder structure
-For the purposes of these notes, I will be using the following folder structure and names:
-```
-Steam\steamapps\common\Blasphemous (= ROOT folder)
---\Blasphemous_Data (= DATA folder; vanilla folder which holds game data, obviously)
---\--\data.unity3d (vanilla file containing )
---\--\Managed (vanilla folder with .dll files)
---\--\--\Assembly-CSharp.dll (vanilla file containing game logic and generally extremely important stuff)
---\--\--\Mods (added when copying edited .dll files from Output)
---\Blasphemous_Data_BACKUP (unedited copy of vanilla game data, in case of a fuckup)
---\Goodies (vanilla folder with additional stuff like the official artbook or comic)
---\Modding_Code (modding API, and any mod source code)
---\Modding_Graphics_Export (unpacked data.unity3d, and unedited .png images exported from it)
---\Modding_Graphics_Import (edited .png images, and .psd or .xcf source files)
---\Modding_Tools (includes Save Editor and various other things)
-```
-The two `Modding_Graphics_` folders are irrelevant unless you want to mod the sprites (that is, graphic assets).  
-  
-To save hard drive space, I did not back up all of the game data; for any sort of modding I describe in these notes, it is actually enough to back up up to two files:  
-- `data.unity3d` (in the ROOT folder) - back it up if you plan to do graphic modding  
-- `Assembly-CSharp.dll` (in DATA, in the `Managed` folder) - back it up if you plan to do code editing  
-  
 ---
 ## Contents
-[Console](notes/Console.md)
-[Graphic replacers](notes/Graphics.md)  
-  
----
-  
-## Code editing  
-
-
-https://www.jetbrains.com/decompiler/  
- 
-https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html  
---https://keycode.info/  
---https://docs.unity3d.com/ScriptReference/KeyCode.html  
---cont. (remapping, check keycode syntax, find backtick key name, replace, save)  
-  
---more other stuff  
--where is level data? in the .bank files?? I haven't found anything in .xml files so far  
---editing things in Unity editor??  
-  
---using dotpeek??  
---as a side note: https://stackoverflow.com/questions/590863/tool-to-compare-dlls-and-disassemble-the-differences  
-
-## Blasphemous Modding API
-
-describe how to use it to begin with
-and first use the testing mod
-
-### Building a mod
---Open Visual Studio, go to `File->Open->Folder` and open your `Modding_Code` folder.
+[--1. Basic terms and folder structure](notes/Basics.md)  
+[--2. Console](notes/Console.md)  
+[--3. Graphic replacers](notes/Graphics.md)  
+[--4. Player skins](notes/Palettes.md)  
+[--5. Names used in game data](notes/EntityNames.md)
+[--6. Code modding](notes/Code.md)
