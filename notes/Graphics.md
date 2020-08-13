@@ -17,8 +17,6 @@ This may speed up load time. It is also needed for modding the resources.
 
 
 ## Graphic replacers
-
-This section describes the basic workflow with replacing a graphic asset for your own use. As an example, I am using my mod which replaces the screens that say `REQUIEM AETERNAM`, `DETESTATIO SACRORUM`, and `SUMMA BLASPHEMIA`. 
   
 ### Export  
   

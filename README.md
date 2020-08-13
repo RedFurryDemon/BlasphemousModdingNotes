@@ -29,5 +29,5 @@ Notably, no prior image editing/coding experience is necessary to follow these n
 [--2. Console](notes/Console.md)  
 [--3. Graphic replacers](notes/Graphics.md)  
 [--4. Player skins](notes/Palettes.md)  
-[--5. Names used in game data](notes/EntityNames.md)
+[--5. Names used in game data](notes/EntityNames.md)  
 [--6. Code modding](notes/Code.md)
