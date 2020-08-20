@@ -4,7 +4,7 @@ Not everything is named the same as in the game or the wiki. This is a very inco
 ### Bosses  
 AmanecidaAxe - Amanecida of the Golden Blades?
 
-Laudes - Laudes
+Laudes - Laudes, duh
 
 BlindBaby - Esposito
 
@@ -19,29 +19,29 @@ Acolyte - [Acolyte](https://blasphemous.fandom.com/wiki/Acolyte)
 
 AshCharger
 
-BellCarrier
+BellCarrier - [Charging Knell](https://blasphemous.fandom.com/wiki/Charging_Knell)?
 
 BellGhost - [Cimbalillo](https://blasphemous.fandom.com/wiki/Cimbalillo)?
 
 Bishop - [Spear of the Cathedra](https://blasphemous.fandom.com/wiki/Spear_of_the_Cathedra)?
 
-CauldronNun
+CauldronNun - [Sister of the Charred Visage](https://blasphemous.fandom.com/wiki/Sister_of_the_Charred_Visage), hot oil-spilling variant?
 
-ChainedAngel
+ChainedAngel - [Seraph (caged)](https://blasphemous.fandom.com/wiki/Seraph)?
 
-ChasingHead
+ChasingHead - head of a [Headless Chamberlain](https://blasphemous.fandom.com/wiki/Headless_Chamberlain)?
 
-ChimeRinger
+ChimeRinger - [Sister of the Charred Visage](https://blasphemous.fandom.com/wiki/Sister_of_the_Charred_Visage), bell-ringing variant? (I am not sure if this enemy should really be classified together with other nuns, but that is currently the info on the wiki.)
 
-CowardTrapper
+CowardTrapper - [Monfrake](https://blasphemous.fandom.com/wiki/Monfrake)?
 
 CrossCanyon
 
 CrossCrawler - [Crucified](https://blasphemous.fandom.com/wiki/Crucified)
 
-ExplodingEnemy
+ExplodingEnemy - [Herald](https://blasphemous.fandom.com/wiki/Herald)'s summon?
 
-Firethrower
+Firethrower - [Armagura](https://blasphemous.fandom.com/wiki/Amargura) or [Blazing Icon](https://blasphemous.fandom.com/wiki/Blazing_Icon)
 
 Flagellant - [Flagellant](https://blasphemous.fandom.com/wiki/Flagellant)
 
@@ -55,13 +55,13 @@ GhostKnight
 
 GoldenCorpse - [Armature](https://blasphemous.fandom.com/wiki/Armature)
 
-HeadThrower
+HeadThrower - [Headless Chamberlain](https://blasphemous.fandom.com/wiki/Headless_Chamberlain)?
 
 JarThrower - [Bellido](https://blasphemous.fandom.com/wiki/Bellido)?
 
 Jumper - [Hopper](https://blasphemous.fandom.com/wiki/Hopper)?
 
-LanceAngel
+LanceAngel - [Seraph](https://blasphemous.fandom.com/wiki/Seraph)?
 
 Legionary - [Soldier of the Anointed Legion](https://blasphemous.fandom.com/wiki/Soldier_of_the_Anointed_Legion)
 
@@ -75,19 +75,19 @@ MudCrawler - [Crawler](https://blasphemous.fandom.com/wiki/Crawler)?
 
 NewFlagellant - armored variant?
 
-Nun
+Nun - [Sister of the Charred Visage](https://blasphemous.fandom.com/wiki/Sister_of_the_Charred_Visage), cauldron-dragging variant?
 
-PatrollingFlyingEnemy
+PatrollingFlyingEnemy - [Winged Face](https://blasphemous.fandom.com/wiki/Winged_Face)?
 
 Pietat
 
 Processioner
 
-ReekLeader
+ReekLeader - [Herald](https://blasphemous.fandom.com/wiki/Herald)??
 
-Roller
+Roller - [Phalaris/Brazen Bull](https://blasphemous.fandom.com/wiki/Phalaris)?
 
-Runner
+Runner - [Lunatic](https://blasphemous.fandom.com/wiki/Lunatic)??
 
 ShieldMaiden - [Shieldmaiden](https://blasphemous.fandom.com/wiki/Shieldmaiden)
 
@@ -95,7 +95,7 @@ SingleAnguish
 
 Stoners - [Convicts](https://blasphemous.fandom.com/wiki/Convicts)
 
-Swimmer
+Swimmer - [Crawler](https://blasphemous.fandom.com/wiki/Crawler)??? or [Dirt Diver](https://blasphemous.fandom.com/wiki/Dirt_Diver)?
 
 TrinityMinion
 

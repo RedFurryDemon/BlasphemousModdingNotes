@@ -24,6 +24,15 @@ A large part of this file is written in the form of a tutorial, mainly because t
 Notably, no prior image editing/coding experience is necessary to follow these notes (although it's certainly useful).  
   
 ---
+  
+## In case of problems...
+Okay, you weren't sure what you were doing. The game won't start or is all messed up, and no backup can help.  
+  
+Maybe it is The Miracle that is punishing you for trying to change game data, but hey, it's possible to fix that.
+
+Try to [verify the integrity of game files on Steam](https://support.steampowered.com/kb_article.php?ref=2037-QEUH-3335). For another source, back up your saves, nuke the whole game and reinstall it clean.
+  
+---
 ## Contents
 [--1. Basic terms and folder structure](notes/Basics.md)  
 [--2. Console](notes/Console.md)  
